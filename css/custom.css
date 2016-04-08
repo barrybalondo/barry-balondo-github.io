@@ -100,10 +100,20 @@ hr {
     text-align: center;
 }
 
+/* sets the modal lower */
+#contactModal {
+    padding-top: 120px;
+}
+
+/* temporary apporach to extend bottom part of contact modal */
+.contact-padding {
+    padding-bottom: 55px;
+}
+
 .small-brand {
     display: inherit;
     margin: 0;
-    padding: 180px 0 10px; /* default value 30 */
+    padding: 170px 0 10px; /* default value 30 */
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
@@ -124,6 +134,7 @@ hr {
 }
 
 
+
 .email-title {
     color: black;
     text-align: center;
@@ -132,9 +143,6 @@ hr {
     letter-spacing: 3px;
 }
 
-.email-padding {
-    margin-bottom: 50px;
-}
 
 .email-title:hover {
     color: black;
@@ -212,7 +220,7 @@ a .fa {
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         text-transform: uppercase;
-        font-size: 1.25em;
+        font-size: 1.8em;
         font-weight: 400;
         letter-spacing: 3px;
         color: #fff;
