@@ -165,16 +165,21 @@ a .fa {
 }
 
 
+.navbar-nav > li > a:hover {
+    border-bottom: 1px solid black;
+}
 
 
 @media screen and (min-width:768px) {
     
+    /* removes highlight after using modal */
     *:focus {  
         outline: none!important;  
     }  
     .modal-custom-title {
         font-size: 2.5em;
     }
+    
     
     /* resizes modal if large screen */
     .modal-dialog {
