@@ -172,9 +172,19 @@ a .fa {
 
 @media screen and (min-width:768px) {
 
+    /* zoom over menus webkit */
+    .zoom {
+        -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+    }
+    .zoom:hover {
+        -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+    }
+    
+    /* adds border when hovered at the bottom */
     .navbar-nav > li > a:hover {
-        border-bottom: 1px solid black;
-        font-size: 1.1em;
+        border-bottom: 1px solid rgba(119,119,119,1);
     }
 
     /* to change back highlight color to original one after click on navbar */
