@@ -1,1 +1,146 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Barry Balondo - Developer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="brand" id="headline">Barry Balondo</div>
+    <div class="job-bar">Software / Web Developer</div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">BB</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="javascript:window.print()">Resume</a>
+                    </li>
+                    <li>
+                        <a href="" data-toggle="modal" data-target="#aboutModal">About</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/barrybalondo/">Projects</a>
+                    </li>
+                    <li>
+                        <a href="" data-toggle="modal" data-target="#contactModal">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+    <!-- Displays my name if its small scree -->
+    <div class="small-brand">Barry Balondo</div>
+
+    
+    <!-- About Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body"> 
+            <div class="modal-custom-title" align="center">Who am I?</div><hr>
+            <div class="body-content" align="center">A guy who loves to code! Java, C++, SQL, you name it, I have some idea on it. Right now, I'm sharpening my skills with Ruby on Rails and who knows what technology will peak my curiousity next (maybe the MEAN stack)!
+              </div>
+            <div class="modal-custom-title" align="center">Skills</div><hr>
+            <div class="body-content" align="center">Will Update Soon.</div>
+            <div class="modal-custom-title" align="center">Education</div><hr>
+            <div class="body-content" align="center">Will Update Soon.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body" align="center"> 
+             <div class="modal-custom-title">Get Connected</div><hr>
+              <ul class="list-inline">
+                  <li><a href="https://www.linkedin.com/in/barrybalondo"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+                  <li><a href="https://www.facebook.com/barry.balondo"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+              </ul>
+              <button type="button" class="btn btn-secondary email-padding"><a class="email-title" href="mailto:barry_balondo@hotmail.com">barry_balondo@hotmail.com</button>  
+          </div>
+        </div>
+      </div>
+    </div>    
+        
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/shine.min.js"></script>
+    
+    <script type="text/javascript">
+      // use new shinejs.Shine(...) if Shine is already defined somewhere else
+      // var shine = new shinejs.Shine(document.getElementById('headline'));
+      var shine = new Shine(document.getElementById('headline'));
+
+      function handleMouseMove(event) {
+        shine.light.position.x = event.clientX;
+        shine.light.position.y = event.clientY;
+        shine.draw();
+      }
+
+      window.addEventListener('mousemove', handleMouseMove, false);
+    </script>
+    
+    
+
+</body>
+
+</html>
